@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sports Recommendation System</h1>
+    <form id="recommend-form">
+      <input type="number" id="age" placeholder="Enter your age" required />
+      <input type="number" id="bmi" placeholder="Enter your BMI" required />
+      <input type="text" id="goal" placeholder="Enter your goal (e.g., Fitness)" required />
+      <input type="text" id="preference" placeholder="Enter preference (Indoor/Outdoor)" required />
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <!-- Loader element added here -->
+    <div id="loader" style="display:none;">Loading...</div>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
